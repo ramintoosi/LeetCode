@@ -31,3 +31,15 @@ def buyChoco_2(prices: list[int], money: int):
             min_2 = p
     res = money - min_1 - min_2
     return res if res >= 0 else money
+
+
+def buyChoco_3(prices: list[int], money: int):
+    """
+    Another solution with sort
+    :type prices: List[int]
+    :type money: int
+    :rtype: int
+    """
+    prices = sorted(prices)
+    res = money - prices[0] - prices[1]
+    return res if res >= 0 else money

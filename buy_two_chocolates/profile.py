@@ -4,7 +4,7 @@ This module measures the memory usage and running time of the written function
 from memory_profiler import memory_usage
 import timeit
 
-from buy_two_chocolates.main import buyChoco as buyChoco
+from buy_two_chocolates.main import buyChoco_3 as buyChoco
 
 memory_result = memory_usage(
     (buyChoco, ([3, 2, 3], 3)),
