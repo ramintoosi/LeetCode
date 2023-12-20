@@ -8,4 +8,6 @@ def buyChoco(prices: list[int], money: int):
     :rtype: int
     """
 
-    return None
+    two_smallest = heapq.nsmallest(2, prices)
+    res = money - sum(two_smallest)
+    return res if res >= 0 else money
