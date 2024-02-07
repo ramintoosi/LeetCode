@@ -11,7 +11,7 @@ memory_result = memory_usage(
     interval=0.0001,
     max_usage=True
 )
-n = 100
+n = 10000
 time_result = timeit.timeit(stmt='addBinary("1010101010101010", "10101010101010100010100101010101101010")',
                             globals=globals(), number=n)
 
